@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 2</title>
+</head>
+<body>
+  <script>
+   function print(ars1){
+           console.log(ars1)
+        }
+
+        function DeleteElement(ars1, element) {
+            for (let i = 0; i < ars1.length; i++) {
+                if (ars1[i] == element ) {
+                    ars1.splice(i, 1)
+                    i--
+                }  
+            }
+            return ars1;
+        }
+
+        console.log(DeleteElement([2, 4, 6 ,8 ,10], 4))
+    </script>
+
+    
+</body>
+</html>

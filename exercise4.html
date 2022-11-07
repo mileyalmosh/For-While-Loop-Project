@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 4</title>
+</head>
+<body>
+    <script>
+        function show(arr){
+          console.log(arr)
+        }
+       function findDup(arr) {
+            let duparr = []
+            const result = {duparr : []}
+            for(let i = 0; i < arr.length; i++){
+                for(let x = i + 1; x < arr.length; x++){
+                    if(arr[x] == arr[i]){
+                        duparr.push(arr[x])
+                    }
+
+                }
+
+            }
+            return result;
+
+        }
+
+        console.log(findDup([2, 2, 10, 12, 6, 1, 3,6]))
+
+    </script>
+    
+</body>
+</html>

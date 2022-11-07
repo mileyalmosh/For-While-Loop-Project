@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 10</title>
+</head>
+<body>
+    <script>
+        function showindex(arr){
+            let i = 0
+            let index = 0
+            const string = "HELLO"
+            while (i < arr.length){
+                if (arr[i] == string && i % 2 != 0) { 
+                    index = i
+                    break;
+                }
+                
+                i++   
+            }
+            return index;
+
+        }
+
+        console.log(showindex(['HELLO', 'car', 'hello' ,'yellow','apple', 'HELLO']))
+
+    </script>   
+</body>
+</html>
